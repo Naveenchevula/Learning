@@ -1,0 +1,1 @@
+//Temperature Classifier: Print "Hot", "Nice", or "Cold" based on a temperature variable value
