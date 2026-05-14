@@ -93,3 +93,74 @@ function addition(x:number, y:number): number{
 }
 let result1 = addition(15, 25);
 console.log("Sum of "+ 15 + " and " + 25 + " is: " + result1);
+//Anonymous function  - function expression / function without name
+
+// syntax of anonymous function
+
+// the function which is delcareed without a name that function will be stored in a variable 
+// The varied where we stored the function becomes the name of the function
+// call back function- a function which will be uti;ised as a paremeter to another function is called call back function
+// syntax of anonymous function
+/*
+ funtion(parameters: datatype): returnType(optional) {
+    // block of code to be executed
+    return 
+}
+*/
+
+
+let displayInfo = function(name: string, age : number): void{
+    console.log(`Your name is ${name} and your age is ${age}`);
+}
+displayInfo("John", 30);
+
+// 3. Arrow function - function expression (=>) - Lambda Function - ES 6 - 20215 
+// 1. This is also a part of anonymous function and will not have any name 
+// 2. This function will be declared by using (=> ) arrow symbol after the paranthesis
+// 3. Arrow function use to shorten the number of lines of code 
+// 4. If there is only one line of the code inside the function then we can skip the curly braces inside the arrow function
+// sysntax 
+/*
+(parameters: datatype): returnType(optional) => {
+    // block of code to be executed
+    return 
+}
+*/
+
+ let Message =(name: string, age: number): void =>  
+    console.log(`Your name is ${name} and your age is ${age}`);
+
+Message("Alice", 25);
+
+// defualt parameter and optional parameter 
+function sum2(a:number , b:number = 20){
+    console.log(a + b);
+}sum2 (10);
+sum2(20, 30);
+
+// default parameter - A parameter which has a default value 
+// Method Overloading  is a process where you can declare the same methode name with different parameter 
+// method overloading is not directly suppoter by typecript but we can achieve method overloading by using optional parameters and union types
+
+// optional parameter - A parameter which may or may not be provided with the value at the time of calling the function is called optional parameter
+function display (name:string, age?:number){
+    console.log (`Your name is ${name} and your age is ${age}`);
+
+
+}
+display("Bob");
+display("Alice", 25);
+
+
+// Assigment  - Complete the display funtion by wirting  the logic to print only name if age parameter is not given and print both name and age if age parameter is given at the time of calling the function
+
+
+function display1 (name:string, age?:number){
+    if(age === undefined){
+        console.log(`Your name is ${name}`);
+    } else {
+        console.log (`Your name is ${name} and your age is ${age}`);
+    }   
+}
+display1("Bob");
+display1("Alice", 25);
