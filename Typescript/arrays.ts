@@ -131,12 +131,12 @@ console.log(stringRepresentation);
 // deleteCount - the number of elements to remove from the array / number of  elements to be deleted from the array 
 // ele1, ele2, ... - the elements to add to the array at the startIndex
 console.log('splice learning starts here');
-let arr18 = [10,20,40,60,70];
+let arr18: (number | string)[] = [10,20,40,60,70];
 // remove 1 element at index 2
 arr18.splice(2, 1,400);
 console.log(arr18);
 
-arr18.splice(2, 0, "js", "ts", "react");
+arr18.splice(2, 0, "js1", "ts", "react");
 console.log(arr18);
 // slice() - used to create a new array by copying a portion of an existing array
 // syntax - arrayName.slice(startIndex, endIndex)

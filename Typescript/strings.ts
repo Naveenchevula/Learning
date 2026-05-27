@@ -81,7 +81,7 @@ let str20 = 'Hello ';
 console.log(str20.repeat(3)); // Hello Hello Hello  
 // 18.split(separator) - used to split a string into an array of substrings based on a specified separator
 let str21 = 'Hello World';
-let arr1 = str21.split(' ');    
+let arr45 = str21.split(' ');    
 console.log(arr1); // ['Hello', 'World']
 let str22=  "apple banana orange";
 str22.split(" "); // ['apple', 'banana', 'orange']
