@@ -81,10 +81,9 @@ console.log(text);
 // get text value from mulitle elements 
 // allTextContents()
 //allInnerText()
+// mo looping concept is needed 
 
 const allText = await page.locator("h2.title").allTextContents()
-
-
 console.log(allText)
 
 
