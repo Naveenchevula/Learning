@@ -84,3 +84,26 @@ console.log(emp.empId)
 emp.employeeInformation()
 Employee.disaplyCompany()
 
+
+class Manager extends Employee {
+    bonus: number;
+
+    constructor(
+        id: number,
+        name: string,
+        age: number,
+        salary: number,
+        bonus: number
+    ) {
+        super(id, name, age, salary);
+        this.bonus = bonus;
+    }
+
+    displayManagerInfo() {
+        this.employeeInformation();
+        console.log("Manager Bonus: " + this.bonus);
+    }
+}
+
+const mgr = new Manager(23, "naveen", 29, 30000, 1000);
+mgr.displayManagerInfo();
