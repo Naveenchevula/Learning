@@ -281,3 +281,7 @@ page.getByRole('button', {name: 'Submit'})
 
 
 // codegen - Code generation - 
+
+
+// Dynamic table xpath where rows and columns keeps chaning upon the refresh
+//tr[td[text()='System']]/td[count(//th[text()='CPU (%)']/preceding-sibling::th)+1]
